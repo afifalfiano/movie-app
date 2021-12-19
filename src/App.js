@@ -1,7 +1,6 @@
 import logo from './logo.svg';
-import './App.css';
 import config from './config/config';
-
+import './index.css';
 
 
 function App() {
@@ -13,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="App-header container bg-red-600">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
