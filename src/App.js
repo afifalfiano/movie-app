@@ -1,7 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
+import config from './config/config';
+
+
 
 function App() {
+
+  fetch(config.BASE_URL +  '/550?api_key=' + config.TOKEN).then(res => {
+    return res.json();
+  }).then(res => console.log(res));
+
+
   return (
     <div className="App">
       <header className="App-header">
