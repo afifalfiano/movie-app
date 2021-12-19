@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import NavBar from './components/Nav/NavBar';
 import config from './config/config';
 import './index.css';
 
@@ -11,21 +11,9 @@ function App() {
 
 
   return (
-    <div className="App">
-      <header className="App-header container bg-red-600">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="mx-auto bg-gray-100 h-screen w-screen">
+      
+      <NavBar />
     </div>
   );
 }
